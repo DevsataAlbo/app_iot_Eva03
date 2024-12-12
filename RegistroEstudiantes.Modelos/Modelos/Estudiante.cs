@@ -13,7 +13,7 @@ namespace RegistroEstudiantes.Modelos.Modelos
         public string? PrimerApellido { get; set; }
         public string? SegundoApellido { get; set; }
         public string? CorreoElectronico { get; set; }
-        public DateTime FechaInicio { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public string? Nivel { get; set; }
         public string? Curso { get; set; }
         public bool Estado { get; set; }

@@ -66,7 +66,7 @@ public partial class CrearEstudiante : ContentPage
             PrimerApellido = primerApellidoEntry.Text,
             SegundoApellido = segundoApellidoEntry.Text,
             CorreoElectronico = correoEntry.Text,
-            FechaInicio = fechaInicioPicker.Date,
+            FechaNacimiento = fechaNacimientoPicker.Date,
             Nivel = nivelSeleccionado.Nombre,
             Curso = cursoSeleccionado.Nombre,
             Estado = estadoCheckBox.IsChecked

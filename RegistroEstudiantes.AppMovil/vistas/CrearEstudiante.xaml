@@ -25,7 +25,7 @@
                x:Name="segundoApellidoEntry"/>
         <Entry Placeholder="Correo Electrónico"
                x:Name="correoEntry"/>
-        <DatePicker x:Name="fechaInicioPicker"/>
+        <DatePicker x:Name="fechaNacimientoPicker"/>
         <Label Text="Estudiante Activo?" 
                VerticalOptions="Center"/>
         <CheckBox x:Name="estadoCheckBox"/>
