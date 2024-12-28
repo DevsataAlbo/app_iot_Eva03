@@ -39,22 +39,54 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.RowSpan="2"
-                       Source="profile.jpg"
-                       Aspect="AspectFill"
-                       HeightRequest="60"
-                       WidthRequest="60"/>
+                                   Grid.Column="0"
+                                   Source="profile.jpg"
+                                   Aspect="AspectFill"
+                                   HeightRequest="60"
+                                   WidthRequest="60"/>
                             <Label Grid.Column="1"
-                       Grid.Row="0"
-                       Text="{Binding NombreCompleto}"
-                       FontAttributes="Bold"
-                       FontSize="20"/>
+                                   Grid.Row="0"
+                                   Text="{Binding NombreCompleto}"
+                                   FontAttributes="Bold"
+                                   FontSize="20"/>
                             <Label Grid.Column="1"
-                       Grid.Row="1"
-                       Text="{Binding CursoCompleto}"/>
+                                   Grid.Row="1"
+                                   Text="{Binding CursoCompleto}"/>
+                            <Button Grid.Column="2" 
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                    Text="✏️"
+                                    Clicked="EditarEstudiante_Clicked"
+                                    HeightRequest="40"
+                                    WidthRequest="40"/>
+
+                            <Button Grid.Column="3"
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                    Text="👎"
+                                    Clicked="DeshabilitarEstudiante_Clicked"
+                                    HeightRequest="40"
+                                    WidthRequest="40"/>
                         </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

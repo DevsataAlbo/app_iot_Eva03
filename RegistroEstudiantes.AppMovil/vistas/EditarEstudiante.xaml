@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroEstudiantes.AppMovil.vistas.EditarEstudiante"
+             Title="Editar Estudiante">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Picker Title="Seleccionar Nivel"
+                x:Name="nivelPicker"
+                ItemsSource="{Binding Niveles}"
+                ItemDisplayBinding="{Binding Nombre}"
+                SelectedIndexChanged="nivelPicker_SelectedIndexChanged"/>
+
+        <Picker Title="Seleccionar Curso"
+                x:Name="cursoPicker"
+                IsEnabled="False"
+                ItemDisplayBinding="{Binding Nombre}"/>
+
+        <Entry Placeholder="Primer Nombre"
+               x:Name="primerNombreEntry"/>
+        <Entry Placeholder="Segundo Nombre"
+               x:Name="segundoNombreEntry"/>
+        <Entry Placeholder="Primer Apellido"
+               x:Name="primerApellidoEntry"/>
+        <Entry Placeholder="Segundo Apellido"
+               x:Name="segundoApellidoEntry"/>
+        <Entry Placeholder="Correo Electrónico"
+               x:Name="correoEntry"/>
+        <DatePicker x:Name="fechaNacimientoPicker"/>
+        <Label Text="Estudiante Activo?" 
+               VerticalOptions="Center"/>
+        <CheckBox x:Name="estadoCheckBox"/>
+        <Button Text="Actualizar"
+                x:Name="actualizarButton"
+                Clicked="actualizarButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
